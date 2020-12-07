@@ -1,31 +1,20 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Card} from 'react-bootstrap'
 import Rating from './Rating'
 
-// _id: '1',
-//     name: 'Airpods Wireless Bluetooth Headphones',
-//     image: '/images/airpods.jpg',
-//     description:
-//       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-//     brand: 'Apple',
-//     category: 'Electronics',
-//     price: 89.99,
-//     countInStock: 10,
-//     rating: 4.5,
-//     numReviews: 12,
-
-const Product = ({_id,name,image, description,rating, numReviews,price}) => {
+const Product = ({_id,name,image,rating, numReviews,price}) => {
     return (
         <Card className='my-3 p-3 rounded'>
-            <a href={`/product/${_id}`}>
+            <Link to={`/product/${_id}`}>
                 <Card.Img src={image} variant='top'/>
-            </a>
+            </Link>
             <Card.Body>
-            <a href={`/product/${_id}`}>
+            <Link to={`/product/${_id}`}>
                 <Card.Title as='div'><strong>{name}</strong> </Card.Title>
-            </a>
+            </Link>
             <Card.Text as='div'>
-               <Rating value={rating} text={` ${numReviews} reviews`}/>
+               <Rating value={rating} text={`${numReviews} reviews`}/>
              </Card.Text>
              <Card.Text as='h3'>
                  ${price}

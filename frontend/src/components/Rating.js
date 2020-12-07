@@ -59,6 +59,7 @@ Rating.defaultProps = {
 
 }
 
+// eslint-disable-next-line react/no-typos
 Rating.PropTypes = {
     value: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,

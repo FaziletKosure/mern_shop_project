@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card} from 'react-bootstrap'
+import Rating from './Rating'
 
 // _id: '1',
 //     name: 'Airpods Wireless Bluetooth Headphones',
@@ -24,9 +25,7 @@ const Product = ({_id,name,image, description,rating, numReviews,price}) => {
                 <Card.Title as='div'><strong>{name}</strong> </Card.Title>
             </a>
             <Card.Text as='div'>
-                <div className='my-3'>
-                    {rating} from { numReviews} reviews
-                </div>
+               <Rating value={rating} text={` ${numReviews} reviews`}/>
              </Card.Text>
              <Card.Text as='h3'>
                  ${price}

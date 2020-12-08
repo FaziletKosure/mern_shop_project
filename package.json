@@ -1,0 +1,23 @@
+{
+  "name": "fullstack_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaziletKosure/mern_shop_project.git"
+  },
+  "keywords": [],
+  "author": "Fazilet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FaziletKosure/mern_shop_project/issues"
+  },
+  "homepage": "https://github.com/FaziletKosure/mern_shop_project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

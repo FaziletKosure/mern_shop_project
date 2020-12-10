@@ -1,4 +1,4 @@
-const mongaase = require('mongoose')
+const mongoose = require('mongoose')
 
 const orderSchema = mongoose.Schema({
     user:{

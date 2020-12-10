@@ -1,6 +1,6 @@
-const mongaase = require('mongoose')
+const mongoose = require('mongoose')
 
-const reviewSchema=mongaase.Schema({
+const reviewSchema=mongoose.Schema({
     name:{type:String,require:true},
     rating:{type:Number,require:true},
     comment:{type:String,require:true},
@@ -10,7 +10,7 @@ const reviewSchema=mongaase.Schema({
 
 const productSchema = mongoose.Schema({
     user: {
-        type: mongaase.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref:'User'
 

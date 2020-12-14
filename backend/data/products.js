@@ -1,12 +1,12 @@
 const products = [
   {
-    name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/images/airpods.jpg',
+    name:  'iPhone 12 pro',
+    image: '/images/1.png',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
+    'Industry‑leading IP68 water resistance,Ceramic Shield, tougher than any smartphone glass',
     brand: 'Apple',
     category: 'Electronics',
-    price: 89.99,
+    price: 999.00,
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,

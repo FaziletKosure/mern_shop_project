@@ -29,6 +29,7 @@ const ProfileScreen = ({ location, history }) => {
 
   const orderListMy = useSelector((state) => state.orderListMy)
   const { loading: loadingOrders, error: errorOrders, orders } = orderListMy
+  console.log(orders);
 
   useEffect(() => {
     if (!userInfo) {
@@ -128,6 +129,7 @@ const ProfileScreen = ({ location, history }) => {
                 <th>TOTAL</th>
                 <th>PAID</th>
                 <th>DELIVERED</th>
+                <th>NAME</th>
                 <th></th>
               </tr>
             </thead>
@@ -135,8 +137,10 @@ const ProfileScreen = ({ location, history }) => {
               {orders.map((order) => (
                 <tr key={order._id}>
                   <td>{order._id}</td>
+                 
                   <td>{order.createdAt.substring(0, 10)}</td>
                   <td>{order.totalPrice}</td>
+                 
                   <td>
                     {order.isPaid ? (
                       order.paidAt.substring(0, 10)

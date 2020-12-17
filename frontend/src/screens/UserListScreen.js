@@ -11,6 +11,7 @@ const UserListScreen = ({ history }) => {
 
   const userList = useSelector((state) => state.userList)
   const { loading, error, users } = userList
+  console.log(users);
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -22,7 +23,7 @@ const UserListScreen = ({ history }) => {
     if (userInfo && userInfo.isAdmin) {
       dispatch(listUsers())
     } else {
-      history.push('/login')
+      // history.push('/login')
     }
   }, [dispatch, history, successDelete, userInfo])
 

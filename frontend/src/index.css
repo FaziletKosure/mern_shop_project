@@ -38,14 +38,10 @@ h3 {
 }
 /* carousel */
 .carousel {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  border-radius: 5px;
-  /* background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(255, 255, 255, 0.1)
-  ); */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   width: 100%;
 }
 .carousel-item-next,
@@ -64,10 +60,11 @@ h3 {
 
 .carousel img {
   height: 280px;
-  width: 600px;
-  padding: 30px;
+  width: 700px;
+  border-radius: 10px;
+  padding: 10px;
   /* margin: 40px; */
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* margin-left: auto;
   margin-right: auto; */
 }

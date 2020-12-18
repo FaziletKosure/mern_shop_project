@@ -1,16 +1,32 @@
 main {
   min-height: 80vh;
 }
+.nav {
+  /* background: rgb(104, 157, 207); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: 10px;
+  border-radius: 3px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+.home-title {
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: rgb(192, 182, 182) 2px solid;
+}
 .product-cart {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   height: 450px;
+  background-color: #ececec;
 }
 .product-img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   height: 250px;
+  border-radius: 5px;
 }
 
 h3 {
@@ -20,6 +36,16 @@ h3 {
   margin: 0.1rem;
 }
 /* carousel */
+.carousel {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 5px;
+  /* background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(255, 255, 255, 0.1)
+  ); */
+}
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
@@ -35,12 +61,13 @@ h3 {
 }
 
 .carousel img {
-  height: 400px;
+  height: 280px;
+  width: 600px;
   padding: 30px;
-  margin: 40px;
+  /* margin: 40px; */
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 .carousel a {
   margin: 0 auto;

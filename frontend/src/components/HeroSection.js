@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../App.css';
-// import { Button } from './Button';
+import { Button } from './Button';
 import './HeroSection.css';
 import {Link} from 'react-router-dom'
 
@@ -8,19 +8,19 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/chanel.mp4' autoPlay loop muted />
-      <h1>BOOST YOUR CAREER</h1>
+      {/* <h1>BOOST YOUR CAREER</h1> */}
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        {/* <Button
+        <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          path='/sign-up'
+          path='/'
         >
           GET STARTED
-        </Button> */}
+        </Button>
         <Link to='/services'>
-        {/* <Button
+        <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
@@ -28,7 +28,7 @@ function HeroSection() {
           path='/services'
         >
           WATCH TRAILER <i className='far fa-play-circle' />
-        </Button> */}
+        </Button>
         </Link>
       </div>
     </div>

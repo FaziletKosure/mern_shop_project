@@ -59,7 +59,7 @@ const Footer = () => {
           <Link
               class='social-icon-link instagram'
               to='/'
-              target='_blank'
+              // target='_blank'
               aria-label='Instagram'
             >
               <i class='far fa-eye' />

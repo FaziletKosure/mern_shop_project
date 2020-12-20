@@ -22,20 +22,20 @@ const Header = () => {
         <Container>
         <Link
               class='social-icon-link eye'
-              to='/'
-              target='_blank'
+              to='/hero'
+              // target='_blank'
               aria-label='eye'
             >
               <i class='far fa-eye' />
             </Link>
-          <LinkContainer to='/'>
+          <LinkContainer to='/hero'>
             <Navbar.Brand>FaziShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ml-auto'>
-            <LinkContainer to='/hero'>
+            <LinkContainer to='/'>
                 <Nav.Link>
                   <i className='fas fa-shopping-home'></i> Home
                 </Nav.Link>

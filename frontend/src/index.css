@@ -6,7 +6,8 @@ main {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin: 10px;
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0);
+  color: white;
 }
 .home-title {
   text-align: center;
@@ -43,6 +44,7 @@ h3 {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   width: 100%;
+  background-color: #000;
 }
 .carousel-item-next,
 .carousel-item-prev,
@@ -73,7 +75,7 @@ h3 {
 }
 @media (max-width: 900px) {
   .carousel-caption h2 {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 
@@ -82,10 +84,10 @@ h3 {
 }
 
 Form .search-btn {
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  background: #60a3bc;
+  background: #6e7172;
   padding: 40px;
   border-radius: 50px;
   display: inline-block;
@@ -94,7 +96,8 @@ Form .search-btn {
 }
 
 .search-btn:hover {
-  background: #073e52;
+  background: #b4b7b8;
+  color: #000;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1) !important;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57) !important;
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57) !important;
@@ -221,4 +224,74 @@ video {
   .btn {
     width: 100%;
   }
+}
+
+/* Social Icons */
+.footer-con {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 10px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0);
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icon-link {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+.social-icon-link:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  /* justify-content: end;
+  align-items: right;
+  width: 240px; */
+}
+
+.social-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.website-rights {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 820px) {
+  .footer-links {
+    padding-top: 2rem;
+  }
+
+  .footer-input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .footer-link-wrapper {
+    flex-direction: column;
+  }
+
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

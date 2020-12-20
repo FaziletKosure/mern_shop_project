@@ -61,9 +61,9 @@ const UserListScreen = ({ history }) => {
                 </td>
                 <td>
                   {user.isAdmin ? (
-                    <i className='fas fa-check' style={{ color: 'green' }}></i>
+                    <i className='fas fa-check' style={{ color: '#000' }}></i>
                   ) : (
-                    <i className='fas fa-times' style={{ color: ' #60a3bc' }}></i>
+                    <i className='fas fa-times' style={{ color: ' #000' }}></i>
                   )}
                 </td>
                 <td>
@@ -73,7 +73,7 @@ const UserListScreen = ({ history }) => {
                     </Button>
                   </LinkContainer>
                   <Button
-                    variant='danger'
+                    // variant='danger'
                     className='btn-sm'
                     onClick={() => deleteHandler(user._id)}
                   >

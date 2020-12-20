@@ -34,11 +34,11 @@ const HomeScreen = ({ match }) => {
        
         <ProductCarousel />
       ) : (
-        <Link to='/' className='btn btn-light'>
+        <Link to='/hero' className='btn btn-light'>
           Go Back
         </Link>
       )}
-      <h1 className='home-title'>Latest Products</h1>
+      <h1 className='home-title'>Best Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (

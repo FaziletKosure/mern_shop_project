@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route,Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
@@ -20,8 +20,16 @@ const Header = () => {
     <header>
       <Navbar  className='nav' variant='dark' expand='md' collapseOnSelect>
         <Container>
+        <Link
+              class='social-icon-link eye'
+              to='/'
+              target='_blank'
+              aria-label='eye'
+            >
+              <i class='far fa-eye' />
+            </Link>
           <LinkContainer to='/'>
-            <Navbar.Brand>ProShop</Navbar.Brand>
+            <Navbar.Brand>FaziShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

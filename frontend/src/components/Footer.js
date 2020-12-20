@@ -1,5 +1,4 @@
 import React from 'react'
-// import './Footer.css';
 import {Container,Row,Col,Navbar} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
@@ -53,8 +52,18 @@ const Footer = () => {
             </Link>
           </div>
           </Col>
+          <Col className="text-center py-4" >
+                      Copyright &copy; FaziShop
+                  </Col>
           <Col className="text-right py-4 footer-text" >
-                      Copyright &copy; ProShop
+          <Link
+              class='social-icon-link instagram'
+              to='/'
+              target='_blank'
+              aria-label='Instagram'
+            >
+              <i class='far fa-eye' />
+            </Link>
                   </Col>
                  
            

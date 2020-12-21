@@ -7,6 +7,7 @@ import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
 
 const Header = () => {
+  const Admin= <i class="fas fa-user-circle"></i>
   const dispatch = useDispatch()
 
   const userLogin = useSelector((state) => state.userLogin)
@@ -37,12 +38,12 @@ const Header = () => {
             <Nav className='ml-auto'>
             <LinkContainer to='/'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-home'></i> Home
+                <i class="fas fa-house-user"></i> 
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                <i class="fas fa-shopping-bag"></i> Bag
+                <i class="fas fa-shopping-bag"></i> 
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -57,12 +58,16 @@ const Header = () => {
               ) : (
                 <LinkContainer to='/login'>
                   <Nav.Link>
-                    <i className='fas fa-user'></i> Sign In
+                    <i className='fas fa-user'></i> 
                   </Nav.Link>
                 </LinkContainer>
               )}
+              
+               
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown title='Admin' id='adminmenu'>
+               
+                <NavDropdown title={Admin} id='adminmenu'>
+                  
                   <LinkContainer to='/admin/userlist'>
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>

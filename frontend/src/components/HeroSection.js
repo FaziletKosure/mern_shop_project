@@ -12,7 +12,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          path='/'
+          path='/hero'
         >
           ViEW COLLECTION
         </Button>

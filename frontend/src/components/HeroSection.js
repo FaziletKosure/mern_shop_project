@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/chanel.mp4' autoPlay loop/>
-      <p>What are you waiting for?</p>
+      <p>LE PARIS RUSSE DE CHANEL</p>
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -14,7 +14,7 @@ function HeroSection() {
           buttonSize='btn--large'
           path='/'
         >
-          GET STARTED
+          ViEW COLLECTION
         </Button>
         {/* <Link to='/services'>
         <Button

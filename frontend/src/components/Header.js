@@ -30,7 +30,7 @@ const Header = () => {
               <i class='far fa-eye' />
             </Link>
           <LinkContainer to='/hero'>
-            <Navbar.Brand>FaziShop</Navbar.Brand>
+            <Navbar.Brand>F&M Fashion Co</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
